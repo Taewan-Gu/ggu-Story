@@ -1,7 +1,7 @@
 FROM gradle:7.1-jdk11 AS build
 COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
-RUN gradle build --no-daemon
+RUN gradle build
 
 FROM openjdk:7u211-jdk-alpine3.9
 VOLUME /build
