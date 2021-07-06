@@ -8,7 +8,11 @@
     </div>
     <br>
     <div calss="mainMenuItemBox">
-      <router-link :class="{ 'mainMenuItem': !select[2], 'selectMainMenuItem': select[2] }" to="/plan" @click="selectMenu(2)">Taewan's <br> Plan</router-link>
+      <router-link :class="{ 'mainMenuItem': !select[2], 'selectMainMenuItem': select[2] }" to="/planner" @click="selectMenu(2)">Taewan's <br> Plan</router-link>
+    </div>
+    <br> <br> <br>
+    <div calss="mainMenuItemBox">
+      <router-link :class="{ 'mainMenuItem': !select[3], 'selectMainMenuItem': select[3] }" to="/mission" @click="selectMenu(3)"> Missions & <br> The words </router-link>
     </div>
   </div>
   <router-view/>
@@ -19,27 +23,21 @@ export default{
   name: 'Home',
   data() {
     return {
-      select: [true, false, false],
+      select: [true, false, false, false],
     }
   },
   created() {
     if (localStorage.getItem("select")) {
-      const select = [false, false, false]
+      const select = [false, false, false, false]
       select[localStorage.getItem("select")] = true
       this.select = select
     } else {
       localStorage.setItem("select", 0)
     }
-    if (this.$router.currentRoute.value.fullPath === "/") {
-      localStorage.setItem("select", 0)
-      const select = [false, false, false]
-      select[localStorage.getItem("select")] = true
-      this.select = select
-    }
   },
   methods: {
     selectMenu: function (idx) {
-      const select = [false, false, false]
+      const select = [false, false, false, false]
       select[idx] = true
       this.select = select
       localStorage.setItem("select", idx)
@@ -77,13 +75,32 @@ export default{
 
 .mainMenuItem {
   color:#eeeeee;
+  font-weight: 550;
   line-height: 22px;
   text-decoration-line: none;
 }
 
 .selectMainMenuItem {
   color:#FF96AD;
+  font-weight: 550;
   line-height: 22px;
   text-decoration-line: none;
+}
+
+@keyframes lightparty {
+  from {
+    color: #eeeeee;
+  }
+
+  to {
+    color: #FF96AD;
+  }
+}
+
+.mainMenuItem:hover {
+  animation-duration: 0.6s;
+  animation-name: lightparty;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 </style>

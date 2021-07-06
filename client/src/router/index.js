@@ -16,9 +16,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Portpolio.vue')
   },
   {
-    path: '/plan',
-    name: 'Plan',
-    component: () => import('../views/Plan.vue')
+    path: '/planner',
+    name: 'Planner',
+    component: () => import('../views/Planner.vue')
+  },
+  {
+    path: '/mission',
+    name: 'Mission',
+    component: () => import('../views/Mission.vue')
   }
 ]
 

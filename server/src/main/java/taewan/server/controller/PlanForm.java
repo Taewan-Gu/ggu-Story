@@ -8,7 +8,6 @@ public class PlanForm {
         return period_id;
     }
 
-
     public String getTitle() {
         return title;
     }
