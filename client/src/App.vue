@@ -30,6 +30,12 @@ export default{
     } else {
       localStorage.setItem("select", 0)
     }
+    if (this.$router.currentRoute.value.fullPath === "/") {
+      localStorage.setItem("select", 0)
+      const select = [false, false, false]
+      select[localStorage.getItem("select")] = true
+      this.select = select
+    }
   },
   methods: {
     selectMenu: function (idx) {

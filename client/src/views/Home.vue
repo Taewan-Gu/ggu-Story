@@ -9,6 +9,9 @@
 // @ is an alias to /src
 
 export default {
-  name: 'Home'
+  name: 'Home',
+  created() {
+    localStorage.setItem("select", 0)
+  },
 }
 </script>
