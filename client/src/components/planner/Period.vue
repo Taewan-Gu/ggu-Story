@@ -15,7 +15,9 @@
           v-for="(period, idx) in periods"
           :key="idx"
         >
-          {{period}}
+          <div class="periodMenuItem" @click="select_period(idx)">
+            {{period}}
+          </div>
         </div>
       </div>
     </div>
@@ -24,7 +26,10 @@
     </button>
     <div class="modalPeriod" v-if="onClickAddButton">
       <div class="modalContentAdjust addPeriods">
-         추가 버튼
+         <input class="addPeriodInput" type="text" v-model="addPeriodInput">
+         <button class="addPeriodButton" @click="add_period">
+           추가
+         </button>
       </div>
       <br>
     </div>
@@ -40,14 +45,23 @@ export default {
       selected_period: "하루",
       onClickChangeButton: false,
       onClickAddButton: false,
+      addPeriodInput: "",
     }
   },
   updated () {
-    this.periods = this.$store.state.periods
+    this.periods = []
+    this.$store.state.periods.forEach(period => {
+      this.periods.push(period.period_data)
+    });
   },
   methods: {
     select_period (idx) {
       this.selected_period = this.periods[idx]
+      this.onClickChangeButton = false
+    },
+    add_period () {
+      alert(this.addPeriodInput)
+      this.onClickAddButton = false
     }
   },
 }
@@ -122,6 +136,26 @@ export default {
 
 .addPeriod {
 
+}
+
+.periodMenuItem {
+  font-size: 40px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.addPeriodInput {
+  padding: 20px;
+  margin: 20px;
+  font-size: 40px;
+}
+
+.addPeriodButton {
+  background-color: #eeeeee;
+  font-size: 24px;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
 }
 
 </style>

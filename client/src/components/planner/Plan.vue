@@ -1,13 +1,21 @@
 <template>
   <div class="plan">
-      여기는 플랜 자리 <br>
-      Todo랑 swap으로 만들 예정 <br>
-      데이터는 생성될 때 부모에서 받아와서 내려주기. <br>
-      {{plans}}
+    <div
+      class="row"
+      v-for="(plan, idx) in plans"
+      :key="idx"
+    >
+      <Card
+        class="card"
+        :cardTtile = "plan[1]"
+        :cardId = "plan[0]"
+      />
+    </div>
   </div>
 </template>
 
 <script>
+import Card from "@/components/planner/PlanCard.vue"
 import SERVER from "@/api/UrlMapper.js"
 import axios from "axios"
 
@@ -17,6 +25,9 @@ export default {
     return {
       plans: []
     }
+  },
+  components: {
+    Card,
   },
   created () {
     axios
@@ -41,12 +52,49 @@ export default {
 
 <style scoped>
 .plan {
-  position: fixed;
+  position: absolute;
+  display: flex;
   left: 400px;
   right: 0px;
   bottom: 0px;
   top: 100px;
-  background-color: #222222;
-  color: #eeeeee;
+  padding-left: 20px;
+  color: black;
+  flex-flow: row wrap;
+}
+
+.card {
+  margin: 20px;
+  cursor: pointer;
+}
+
+@keyframes lightCard {
+  from {
+    background-color: #eeeeee;
+  }
+
+  to {
+    background-color: #FF96AD;
+  }
+}
+
+.card:hover {
+  animation-duration: 1s;
+  animation-name: lightCard;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.card:hover {
+  transform: inherit scale(1.05);
+  
+}
+
+.row {
+  display: contents;
+}
+
+.row:nth-child(4n)::after {
+  content: '';
+  width: 100%;
 }
 </style>
