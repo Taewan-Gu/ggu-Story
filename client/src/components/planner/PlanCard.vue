@@ -23,13 +23,12 @@ export default {
       axios
           .get(SERVER.URL.planner.todo_get + "?plan_id=" + this.cardId)
           .then(res => {
-            console.log(res)
+            this.$store.dispatch("storeTodo", res.data)
+            this.$router.push({name: "TodoList"})
           })
           .catch(err => {
             console.log(err)
           })
-      
-      this.$router.push({name: "TodoList"})
     }
   }
 }
