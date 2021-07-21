@@ -18,14 +18,12 @@ export default {
     }
   },
   created () {
-    console.log(this.$store.state.todo)
     if (this.$store.state.todo[0]) {
       this.todo = this.$store.state.todo[0].plan.title
     }
   },
   methods: {
     onClickBackButton () {
-      console.log(this.todo)
       this.$router.go(-1)
     }
   }

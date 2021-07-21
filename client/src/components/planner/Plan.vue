@@ -33,7 +33,6 @@ export default {
     axios
         .get(`${SERVER.URL.planner.plan_all}`)
         .then(res => {
-          console.log(res);
           res.data.forEach(e => {
             this.plans.push([e.id, e.title])
           });
