@@ -1,15 +1,23 @@
 <template>
   <div class="plan">
-    <div
-      class="row"
-      v-for="(plan, idx) in plans"
-      :key="idx"
-    >
-      <Card
-        class="card"
-        :cardTtile = "plan[1]"
-        :cardId = "plan[0]"
-      />
+    <div class="addPlan">
+      <input type="text" class="planInput" v-model="planInput">
+      <div class="addPlanButton" @click="add_plan">
+        계획 추가
+      </div>
+    </div>
+    <div class="planDisplay">
+      <div
+        class="row"
+        v-for="(plan, idx) in plans"
+        :key="idx"
+      >
+        <Card
+          class="card"
+          :cardTtile = "plan[1]"
+          :cardId = "plan[0]"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -23,7 +31,8 @@ export default {
   name: "Plan",
   data () {
     return {
-      plans: []
+      plans: [],
+      planInput: "",
     }
   },
   components: {
@@ -38,12 +47,28 @@ export default {
           });
         })
         .catch(err => {
-          console.error(err);
+          console.error(err)
         });
   },
   methods: {
-    select_plan (idx) {
-      console.log(this.plans[idx])
+    add_plan () {
+      if (this.planInput == "") {
+        alert("계획의 타이틀을 입력하세요.")
+        return;
+      }
+      const formData = {
+        "period_id": 1,
+        "title": this.planInput,
+      }
+      axios
+        .post(`${SERVER.URL.planner.plan_post}`, formData)
+        .then(() => {
+          this.plans.push([formData.period_id, formData.title])
+        })
+        .catch(err => {
+          console.error(err)
+        });
+      this.planInput = ""
     }
   },
 }
@@ -60,6 +85,42 @@ export default {
   padding-left: 20px;
   color: black;
   flex-flow: row wrap;
+}
+
+.planDisplay {
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.addPlan {
+  position: fixed;
+  display: flex;
+  right: 70px;
+  height: 100px;
+  align-items: center;
+  top: 0px;
+}
+
+.addPlanButton {
+  color: #eeeeee;
+  background-color: #393e46;
+  font-size: 20px;
+  font-weight: 550;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.addPlanButton:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.planInput {
+  line-height: 30px;
+  font-size: 20px;
 }
 
 .card {
