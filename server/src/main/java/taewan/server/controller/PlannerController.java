@@ -12,7 +12,6 @@ import taewan.server.service.PlannerService;
 
 import java.util.List;
 
-@CrossOrigin(origins = {"http://localhost:8000", "https://www.ggustory.site"})
 @Controller
 public class PlannerController {
 
