@@ -24,6 +24,7 @@ export default {
           .get(SERVER.URL.planner.todo_get + "?plan_id=" + this.cardId)
           .then(res => {
             this.$store.dispatch("storeTodo", res.data)
+            this.$store.dispatch("storePlanId", this.cardId)
             this.$router.push({name: "TodoList"})
           })
           .catch(err => {
