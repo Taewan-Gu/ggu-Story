@@ -64,11 +64,13 @@ export default {
               "todo": this.todo,
               "todo_data": this.todo_data
             })
+            this.todo = ""
+            this.todo_data = ""
           })
           .catch(err => {
             console.log(err)
           })
-    }
+    },
   }
 }
 </script>
