@@ -5,20 +5,18 @@
         cols="12"
         xl="8"
         offset-xl="2"
-        class="hiddenContents"
+        class="notYet"
       >
         <v-icon
           size="60px"
-          color="red"
         >
-          mdi-alert
+          mdi-wrench
         </v-icon>
-        숨겨진 컨텐츠입니다.
+        공사 중 입니다.
         <v-icon
           size="60px"
-          color="red"
         >
-          mdi-alert
+          mdi-wrench
         </v-icon>
       </v-col>
     </v-row>
@@ -27,13 +25,12 @@
 
 <script>
 export default {
-  name: "Planner",
+  name: "Words",
 }
 </script>
 
 <style scoped>
-  .hiddenContents {
-    color: #232323;
+  .notYet {
     height: 800px;
     text-align: center;
     line-height: 800px;

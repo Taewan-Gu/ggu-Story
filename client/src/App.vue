@@ -1,106 +1,38 @@
 <template>
-  <div class="mainMenu">
-    <div class="mainMenuItemBox">
-      <router-link :class="{ 'mainMenuItem': !select[0], 'selectMainMenuItem': select[0] }" to="/" @click="selectMenu(0)">Show <br> Myself</router-link>
-    </div>
-    <div class="mainMenuItemBox">
-      <router-link :class="{ 'mainMenuItem': !select[1], 'selectMainMenuItem': select[1] }" to="/portpolio" @click="selectMenu(1)">Taewan's <br> Portpolio</router-link>
-    </div>
-    <br>
-    <div calss="mainMenuItemBox">
-      <router-link :class="{ 'mainMenuItem': !select[2], 'selectMainMenuItem': select[2] }" to="/planner" @click="selectMenu(2)">Taewan's <br> Plan</router-link>
-    </div>
-    <br> <br> <br>
-    <div calss="mainMenuItemBox">
-      <router-link :class="{ 'mainMenuItem': !select[3], 'selectMainMenuItem': select[3] }" to="/mission" @click="selectMenu(3)"> Missions & <br> The words </router-link>
-    </div>
-  </div>
-  <router-view/>
+  <v-app class="app">
+    <Nav/>
+    <div class="navPosition"></div>
+
+    <v-main>
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-export default{
-  name: 'Home',
-  data() {
-    return {
-      select: [true, false, false, false],
-    }
-  },
-  created() {
-    if (localStorage.getItem("select")) {
-      const select = [false, false, false, false]
-      select[localStorage.getItem("select")] = true
-      this.select = select
-    } else {
-      localStorage.setItem("select", 0)
-    }
-  },
-  methods: {
-    selectMenu: function (idx) {
-      const select = [false, false, false, false]
-      select[idx] = true
-      this.select = select
-      localStorage.setItem("select", idx)
-    }
+import Nav from "@/components/app/Nav.vue"
+
+
+export default {
+  name: 'App',
+  components: {
+    Nav,
   }
-}
+};
 </script>
 
+<style scoped>
+/* 색: 64C9CF, FDE49C, FFB740, DF711B, 232323 */ 
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.app * { 
+ font-family: 'Noto Sans KR', sans-serif;
 }
 
-.mainMenu {
-  position: fixed;
-  width: 200px;
-  height: 100%;
-  left:0px;
-  top:0px;
-  background-color:#222831;
-  color:#eeeeee;
+.navPosition {
+  height: 70px;
 }
 
-.mainMenuItemBox {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
 
-.mainMenuItem {
-  color:#eeeeee;
-  font-weight: 550;
-  line-height: 22px;
-  text-decoration-line: none;
-}
-
-.selectMainMenuItem {
-  color:#FF96AD;
-  font-weight: 550;
-  line-height: 22px;
-  text-decoration-line: none;
-}
-
-@keyframes lightparty {
-  from {
-    color: #eeeeee;
-  }
-
-  to {
-    color: #FF96AD;
-  }
-}
-
-.mainMenuItem:hover {
-  animation-duration: 0.6s;
-  animation-name: lightparty;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
 </style>
