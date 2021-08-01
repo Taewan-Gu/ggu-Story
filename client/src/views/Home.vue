@@ -1,17 +1,42 @@
 <template>
-  <div class="home">
-    나를 표현하다.
-    저를 표현할 웹 사이트를 만들었습니다.
-  </div>
+  <v-container>
+    <v-row>
+      <v-col
+        cols="12"
+        xl="8"
+        offset-xl="2"
+      >
+        <Label :title="pageTitle"/>
+        <AboutMe />
+        <Stack />
+        <Experience />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
+import Label from "@/components/common/Label.vue";
+import AboutMe from "@/components/home/AboutMe.vue";
+import Stack from "@/components/home/Stack.vue";
+import Experience from "@/components/home/Experience.vue";
 
 export default {
-  name: 'Home',
-  created() {
-    localStorage.setItem("select", 0)
+  name: "Home",
+  data () {
+    return {
+      pageTitle: "HOME",
+    }
   },
+  components: {
+    AboutMe,
+    Label,
+    Stack,
+    Experience,
+  }
 }
 </script>
+
+<style scoped>
+
+</style>

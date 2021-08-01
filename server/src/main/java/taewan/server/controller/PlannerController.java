@@ -10,6 +10,7 @@ import taewan.server.domain.Plan;
 import taewan.server.domain.Todolist;
 import taewan.server.service.PlannerService;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Controller
@@ -24,6 +25,7 @@ public class PlannerController {
 
     @PostMapping("period/new")
     @ResponseBody
+    @Transactional
     public ResponseEntity period_create(@RequestBody PeriodForm form) {
         Period period = new Period();
         period.setPeriod_data(form.getPeriod_data());
@@ -35,6 +37,7 @@ public class PlannerController {
 
     @PostMapping("plan/new")
     @ResponseBody
+    @Transactional
     public ResponseEntity plan_create(@RequestBody PlanForm form) {
         Plan plan = new Plan();
         if (plannerService.period_findById(form.getPeriod_id()).get() == null) {
@@ -50,6 +53,7 @@ public class PlannerController {
 
     @PostMapping("todo/new")
     @ResponseBody
+    @Transactional
     public ResponseEntity todo_create(@RequestBody TodolistForm form) {
         Todolist todolist = new Todolist();
         if (plannerService.plan_findById(form.getPlan_id()).get() == null) {

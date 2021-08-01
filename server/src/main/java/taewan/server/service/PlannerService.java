@@ -9,11 +9,9 @@ import taewan.server.repository.PeriodRepository;
 import taewan.server.repository.PlanRepository;
 import taewan.server.repository.TodolistRepository;
 
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
-@Transactional
 @Service
 public class PlannerService {
 
