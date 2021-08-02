@@ -1,8 +1,7 @@
 <template>
   <v-app class="app">
-    <Nav/>
+    <Nav />
     <div class="navPosition"></div>
-
     <v-main>
       <router-view/>
     </v-main>
@@ -11,7 +10,6 @@
 
 <script>
 import Nav from "@/components/app/Nav.vue"
-
 
 export default {
   name: 'App',

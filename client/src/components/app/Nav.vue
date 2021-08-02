@@ -6,8 +6,7 @@
         <v-col 
           sm="8"
           md="4"
-          offset="0"
-          offset-sm="0"
+          offset-md="0"
           offset-xl="2"
           xl="2"
           class="logo"
@@ -25,7 +24,9 @@
           <span class="menuItem" @click="gotoProjects"> PROJECTS </span>
           <span class="menuItem" @click="gotoBlog"> BLOG </span>
           <span class="menuItem" @click="gotoWords"> WORDS </span>
-          <span class="menuItem" @click="clickContact"> CONTACT </span>
+          <span :class="{menuItem: true, visualStatus: !visualStatus}" @click="clickContact"> CONTACT </span>
+          <span :class="{menuItem: true, visualStatus: visualStatus}" @click="clickContact"> CLOSEUP </span>
+          <Contact :visualStatus="visualStatus"/>
         </v-col>
         <v-col
           cols="4"
@@ -57,9 +58,6 @@
               <v-list-item class="dropdownMenuItem" @click="gotoWords">
                 <v-list-item-title>WORDS</v-list-item-title>
               </v-list-item>
-              <v-list-item class="dropdownMenuItem" @click="clickContact">
-                <v-list-item-title>CONTACT</v-list-item-title>
-              </v-list-item>
             </v-list>
           </v-menu>
         </v-col>
@@ -70,8 +68,18 @@
 </template>
 
 <script>
+import Contact from "@/components/app/Contact.vue"
+
 export default {
   name: "Nav",
+  data () {
+    return {
+      visualStatus: true,
+    }
+  },
+  components: {
+    Contact,
+  },
   methods: {
     gotoHome () {
       this.$router.history.push({name: "Home"});
@@ -86,7 +94,7 @@ export default {
       this.$router.history.push({name: "Words"});
     },
     clickContact () {
-      alert("아직 수정 중 입니다.")
+      this.visualStatus = !this.visualStatus;
     },
   }
 }
@@ -100,6 +108,10 @@ export default {
   .dropdownMenu {
     display: block !important;
   }
+}
+
+.visualStatus {
+  display: none;
 }
 
 .nav {
@@ -141,7 +153,6 @@ export default {
 
 .logo {
   color: #232323;
-  margin-left: 100px;
   font-size: 2rem;
   cursor: default;
 }
