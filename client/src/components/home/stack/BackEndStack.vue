@@ -10,8 +10,8 @@
       <img src="@/assets/img/stack/python.jpg" class="stackImg" alt="">
       <h4>Python</h4>
       <v-rating
-        value="4"
-        readonly="true"
+        :value=4
+        :readonly=true
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -28,8 +28,8 @@
       <img src="@/assets/img/stack/fastapi.jpg" class="stackImg" alt="">
       <h4>FastAPI</h4>
       <v-rating
-        value="3.5"
-        readonly="true"
+        :value="3.5"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -46,8 +46,8 @@
       <img src="@/assets/img/stack/django.jpg" class="stackImg" alt="">
       <h4>Django</h4>
       <v-rating
-        value="3"
-        readonly="true"
+        :value="3"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -64,8 +64,8 @@
       <img src="@/assets/img/stack/sqlalchemy.jpg" class="stackImg" alt="">
       <h4>SQLAlchemy</h4>
       <v-rating
-        value="3"
-        readonly="true"
+        :value="3"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -82,8 +82,8 @@
       <img src="@/assets/img/stack/beautifulsoup.jpg" class="stackImg" alt="">
       <h4>BeautifulSoup</h4>
       <v-rating
-        value="2.5"
-        readonly="true"
+        :value="2.5"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -100,8 +100,8 @@
       <img src="@/assets/img/stack/selenium.jpg" class="stackImg" alt="">
       <h4>Selenium</h4>
       <v-rating
-        value="2"
-        readonly="true"
+        :value="2"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -118,8 +118,8 @@
       <img src="@/assets/img/stack/tensorflow.jpg" class="stackImg" alt="">
       <h4>Tensorflow</h4>
       <v-rating
-        value="1.5"
-        readonly="true"
+        :value="1.5"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -136,8 +136,8 @@
       <img src="@/assets/img/stack/java.jpg" class="stackImg" alt="">
       <h4>Java</h4>
       <v-rating
-        value="3"
-        readonly="true"
+        :value="3"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -154,8 +154,8 @@
       <img src="@/assets/img/stack/springmvc.jpg" class="stackImg" alt="">
       <h4>Spring MVC</h4>
       <v-rating
-        value="2.5"
-        readonly="true"
+        :value="2.5"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -172,8 +172,8 @@
       <img src="@/assets/img/stack/springboot.jpg" class="stackImg" alt="">
       <h4>Spring Boot</h4>
       <v-rating
-        value="2.5"
-        readonly="true"
+        :value="2.5"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -190,8 +190,8 @@
       <img src="@/assets/img/stack/springjdbc.jpg" class="stackImg" alt="">
       <h4>Spring JDBC</h4>
       <v-rating
-        value="2.5"
-        readonly="true"
+        :value="2.5"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -208,8 +208,8 @@
       <img src="@/assets/img/stack/jpa.jpg" class="stackImg" alt="">
       <h4>Spring JPA</h4>
       <v-rating
-        value="2"
-        readonly="true"
+        :value="2"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -226,8 +226,8 @@
       <img src="@/assets/img/stack/nodejs.jpg" class="stackImg" alt="">
       <h4>Node JS</h4>
       <v-rating
-        value="1.5"
-        readonly="true"
+        :value="1.5"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -244,8 +244,8 @@
       <img src="@/assets/img/stack/mysql.jpg" class="stackImg" alt="">
       <h4>MySQL</h4>
       <v-rating
-        value="3.5"
-        readonly="true"
+        :value="3.5"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -262,8 +262,8 @@
       <img src="@/assets/img/stack/firebaserdbms.jpg" class="stackImg" alt="">
       <h4>Firebase RDBMS</h4>
       <v-rating
-        value="2.5"
-        readonly="true"
+        :value="2.5"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -280,8 +280,8 @@
       <img src="@/assets/img/stack/firebaseauth.jpg" class="stackImg" alt="">
       <h4>Firebase Auth</h4>
       <v-rating
-        value="1.5"
-        readonly="true"
+        :value="1.5"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -298,8 +298,8 @@
       <img src="@/assets/img/stack/jwt.jpg" class="stackImg" alt="">
       <h4>JWT</h4>
       <v-rating
-        value="3.5"
-        readonly="true"
+        :value="3.5"
+        :readonly="true"
         color="yellow darken-3"
         background-color="white"
         half-increments
@@ -311,7 +311,7 @@
 
 <script>
 export default {
-  name: "BackEndStack"
+  name: "BackEndStack",
 }
 </script>
 
