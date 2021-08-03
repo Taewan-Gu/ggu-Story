@@ -5,36 +5,29 @@
         cols="12"
         xl="8"
         offset-xl="2"
-        class="notYet"
       >
-        <v-icon
-          size="60px"
-        >
-          mdi-wrench
-        </v-icon>
-        공사 중 입니다.
-        <v-icon
-          size="60px"
-        >
-          mdi-wrench
-        </v-icon>
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
+import ProjectCard from "@/components/projects/ProjectCard.vue";
+
 export default {
   name: "Projects",
+  components: {
+    ProjectCard,
+  },
 }
 </script>
 
 <style scoped>
-  .notYet {
-    height: 800px;
-    text-align: center;
-    line-height: 800px;
-    font-size: 4rem;
-    cursor: default;
+  .thumnail {
+    width: 50%;
   }
 </style>
