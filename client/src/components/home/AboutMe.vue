@@ -1,7 +1,7 @@
 <template>
   <div class="aboutMe">
     <div class="intro">
-      안녕하세요. 미래의 DevOps 개발자 구태완입니다.
+      안녕하세요. 미래의 Backend 개발자 구태완입니다.
     </div>
     <h1> 추구하는 방향 </h1>
     <v-container class="direction">
