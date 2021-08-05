@@ -74,6 +74,8 @@ export default {
   border: 1px solid;
   border-radius: 100px;
   margin-right: 20px;
+  height: 125px;
+  width: 125px;
 }
 
 .profileContent {

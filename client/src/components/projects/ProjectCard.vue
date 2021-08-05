@@ -7,12 +7,12 @@
         cols="12"
         class="projectCard"
       >
-        <img src="@/assets/img/projects/nuvothumnail.png" class="thumnail" alt="">
+        <img :src="require(`@/assets/img/projects/${thumbnail}`)" class="thumbnail" alt="">
         <div>
-          <span class="projectTitle"> NUVO </span> <br>
-          <span class="projectSummary"> VR 여행 사진 전시 플랫폼 </span> <br>
-          <span class="projectNumberOfTeam"> 4명 중 </span><span class="projectRole"> 프론트엔드 담당 </span> <br>
-          <span class="projectPeriod"> 2021.01 ~ 2021.02(7주) </span>
+          <span class="projectTitle"> {{title}} </span> <br>
+          <span class="projectSummary"> {{summary}} </span> <br>
+          <span class="projectNumberOfTeam"> {{numberOfTeam}}명 중 </span><span class="projectRole"> {{role}} 담당 </span> <br>
+          <span class="projectPeriod"> {{period}} </span>
         </div>
       </v-col>
     </v-row>
@@ -22,6 +22,14 @@
 <script>
 export default {
   name: "ProjectCard",
+  props: {
+    thumbnail: [String, Object],
+    title: [String, Object],
+    summary: [String, Object],
+    numberOfTeam: [Number, Object],
+    role: [String, Object],
+    period: [String, Object],
+  }
 }
 </script>
 
@@ -52,9 +60,10 @@ export default {
   animation-direction: alternate;
 }
 
-.thumnail {
+.thumbnail {
   margin: 10px 50px 10px 20px;
   width: 150px;
+  border-radius: 5px;
 }
 
 .projectTitle {
@@ -73,6 +82,7 @@ export default {
   font-size: 20px;
   font-weight: 550;
   color: #DF711B;
+  margin-left: 8px;
 }
 
 .projectNumberOfTeam {

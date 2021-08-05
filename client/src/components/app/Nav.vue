@@ -58,8 +58,15 @@
               <v-list-item class="dropdownMenuItem" @click="gotoWords">
                 <v-list-item-title>WORDS</v-list-item-title>
               </v-list-item>
+              <v-list-item :class="{dropdownMenuItem: true, visualStatus: !visualStatus}" @click="clickContact">
+                <v-list-item-title>CONTACT</v-list-item-title>
+              </v-list-item>
+              <v-list-item :class="{dropdownMenuItem: true, visualStatus: visualStatus}" @click="clickContact">
+                <v-list-item-title>CLOSEUP</v-list-item-title>
+              </v-list-item>
             </v-list>
           </v-menu>
+          <Contact :visualStatus="visualStatus"/>
         </v-col>
       </v-row>
     </v-container>
