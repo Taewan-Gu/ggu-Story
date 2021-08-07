@@ -52,7 +52,7 @@ export default {
 }
 
 .projectCard {
-  margin-top: 30px;
+  margin-bottom: 30px;
   border: 1px solid;
   border-color: #eeeeee;
   border-radius: 10px;

@@ -6,6 +6,7 @@
         xl="8"
         offset-xl="2"
       >
+        <Label :title="pageTitle"/>
         <ProjectCard
           v-for="(thumbnail, idx) in thumbnails"
           :key=idx
@@ -24,13 +25,15 @@
 
 <script>
 import ProjectCard from "@/components/projects/ProjectCard.vue";
+import Label from "@/components/common/Label.vue";
 
 export default {
   name: "Projects",
   data () {
     return {
+      pageTitle: "PROJECTS",
       thumbnails: ["coderunthumbnail.png", "flanetthumbnail.png", "nuvothumbnail.png", "kgbrosthumbnail.png"],
-      titles: ["CODE:RUN", "FLANET", "NUVO", "KGBros"],
+      titles: ["CODE:RUN", "FlaNET", "NUVO", "KGBros"],
       summaries: ["스터디 동영상 공유 플랫폼", "시계열 데이터를 활용한 AI/ML 블록코딩 서비스", "VR 여행 사진 전시 플랫폼", "영화 추천 사이트"],
       numberOfTeamArray: [5, 5, 4, 2],
       roles: ["백엔드, 인프라", "백엔드, 인프라", "프론트엔드", "백엔드, 프론트엔드"],
@@ -40,6 +43,7 @@ export default {
   },
   components: {
     ProjectCard,
+    Label,
   },
 }
 </script>

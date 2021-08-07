@@ -23,7 +23,7 @@
           <span class="menuItem" @click="gotoHome"> HOME </span>
           <span class="menuItem" @click="gotoProjects"> PROJECTS </span>
           <span class="menuItem" @click="gotoBlog"> BLOG </span>
-          <span class="menuItem" @click="gotoWords"> WORDS </span>
+          <!-- <span class="menuItem" @click="gotoWords"> WORDS </span> -->
           <span :class="{menuItem: true, visualStatus: !visualStatus}" @click="clickContact"> CONTACT </span>
           <span :class="{menuItem: true, visualStatus: visualStatus}" @click="clickContact"> CLOSEUP </span>
           <Contact :visualStatus="visualStatus"/>
@@ -55,9 +55,9 @@
               <v-list-item class="dropdownMenuItem" @click="gotoBlog">
                 <v-list-item-title>BLOG</v-list-item-title>
               </v-list-item>
-              <v-list-item class="dropdownMenuItem" @click="gotoWords">
+              <!-- <v-list-item class="dropdownMenuItem" @click="gotoWords">
                 <v-list-item-title>WORDS</v-list-item-title>
-              </v-list-item>
+              </v-list-item> -->
               <v-list-item :class="{dropdownMenuItem: true, visualStatus: !visualStatus}" @click="clickContact">
                 <v-list-item-title>CONTACT</v-list-item-title>
               </v-list-item>
