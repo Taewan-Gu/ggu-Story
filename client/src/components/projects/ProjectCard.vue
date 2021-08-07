@@ -6,8 +6,9 @@
         lg="8"
         cols="12"
         class="projectCard"
+        @click="showProjectDescription"
       >
-        <img :src="require(`@/assets/img/projects/${thumbnail}`)" class="thumbnail" alt="">
+        <img :src="require(`@/assets/img/projects/${thumbnail}`)" class="thumbnail" alt="projectthumnail">
         <div>
           <span class="projectTitle"> {{title}} </span> <br>
           <span class="projectSummary"> {{summary}} </span> <br>
@@ -29,6 +30,13 @@ export default {
     numberOfTeam: [Number, Object],
     role: [String, Object],
     period: [String, Object],
+    descriptionUrl: [String, Object],
+  },
+  methods: {
+    showProjectDescription () {
+      console.log(this.decriptionUrl);
+      this.$router.history.push(this.descriptionUrl);
+    }
   }
 }
 </script>
