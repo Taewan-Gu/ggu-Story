@@ -15,6 +15,7 @@
           :numberOfTeam="numberOfTeamArray[idx]"
           :role="roles[idx]"
           :period="periods[idx]"
+          :descriptionUrl="decriptionUrls[idx]"
         />
       </v-col>
     </v-row>
@@ -34,6 +35,7 @@ export default {
       numberOfTeamArray: [5, 5, 4, 2],
       roles: ["백엔드, 인프라", "백엔드, 인프라", "프론트엔드", "백엔드, 프론트엔드"],
       periods: ["2021.04 ~ 2021.05(6주)", "2021.02 ~ 2021.04(7주)", "2021.01 ~ 2021.02(7주)", "2020.12(2주)"],
+      decriptionUrls: ["/projects/coderun", "/projects/flanet", "/projects/nuvo", "/projects/kgbros"],
     }
   },
   components: {
