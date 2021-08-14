@@ -79,60 +79,6 @@
       lg="2"
       class="stackDetail"
     >
-      <img src="@/assets/img/stack/beautifulsoup.jpg" class="stackImg" alt="">
-      <h4>BeautifulSoup</h4>
-      <v-rating
-        :value="2.5"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
-    <v-col
-      cols="6"
-      sm="4"
-      md="3"
-      lg="2"
-      class="stackDetail"
-    >
-      <img src="@/assets/img/stack/selenium.jpg" class="stackImg" alt="">
-      <h4>Selenium</h4>
-      <v-rating
-        :value="2"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
-    <v-col
-      cols="6"
-      sm="4"
-      md="3"
-      lg="2"
-      class="stackDetail"
-    >
-      <img src="@/assets/img/stack/tensorflow.jpg" class="stackImg" alt="">
-      <h4>Tensorflow</h4>
-      <v-rating
-        :value="1.5"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
-    <v-col
-      cols="6"
-      sm="4"
-      md="3"
-      lg="2"
-      class="stackDetail"
-    >
       <img src="@/assets/img/stack/java.jpg" class="stackImg" alt="">
       <h4>Java</h4>
       <v-rating
@@ -154,7 +100,7 @@
       <img src="@/assets/img/stack/springmvc.jpg" class="stackImg" alt="">
       <h4>Spring MVC</h4>
       <v-rating
-        :value="2.5"
+        :value="3"
         :readonly="true"
         color="yellow darken-3"
         background-color="white"
@@ -263,42 +209,6 @@
       <h4>Firebase RDBMS</h4>
       <v-rating
         :value="2.5"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
-    <v-col
-      cols="6"
-      sm="4"
-      md="3"
-      lg="2"
-      class="stackDetail"
-    >
-      <img src="@/assets/img/stack/firebaseauth.jpg" class="stackImg" alt="">
-      <h4>Firebase Auth</h4>
-      <v-rating
-        :value="1.5"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
-    <v-col
-      cols="6"
-      sm="4"
-      md="3"
-      lg="2"
-      class="stackDetail"
-    >
-      <img src="@/assets/img/stack/jwt.jpg" class="stackImg" alt="">
-      <h4>JWT</h4>
-      <v-rating
-        :value="3.5"
         :readonly="true"
         color="yellow darken-3"
         background-color="white"
