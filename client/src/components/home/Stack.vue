@@ -14,6 +14,7 @@
         </h3>
       </v-row>
       <DevOpsStack />
+      <br>
       <v-row class="stackTitle">
         <h3>
           <v-icon
@@ -26,6 +27,7 @@
         </h3>
       </v-row>
       <BackEndStack />
+      <br>
       <v-row class="stackTitle">
         <h3>
           <v-icon

@@ -36,71 +36,17 @@
         small
       ></v-rating>
     </v-col>
-    <v-col
+        <v-col
       cols="6"
       sm="4"
       md="3"
       lg="2"
       class="stackDetail"
     >
-      <img src="@/assets/img/stack/vuerouter.jpg" class="stackImg" alt="">
-      <h4>Vue Router</h4>
+      <img src="@/assets/img/stack/javascript.jpg" class="stackImg" alt="">
+      <h4>JavaScript</h4>
       <v-rating
         :value="3"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
-    <v-col
-      cols="6"
-      sm="4"
-      md="3"
-      lg="2"
-      class="stackDetail"
-    >
-      <img src="@/assets/img/stack/reactjs.jpg" class="stackImg" alt="">
-      <h4>React.js</h4>
-      <v-rating
-        :value="2"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
-    <v-col
-      cols="6"
-      sm="4"
-      md="3"
-      lg="2"
-      class="stackDetail"
-    >
-      <img src="@/assets/img/stack/redux.jpg" class="stackImg" alt="">
-      <h4>Redux</h4>
-      <v-rating
-        :value="1.5"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
-    <v-col
-      cols="6"
-      sm="4"
-      md="3"
-      lg="2"
-      class="stackDetail"
-    >
-      <img src="@/assets/img/stack/reactnative.jpg" class="stackImg" alt="">
-      <h4>ReacNative</h4>
-      <v-rating
-        :value="2"
         :readonly="true"
         color="yellow darken-3"
         background-color="white"
@@ -169,10 +115,46 @@
       lg="2"
       class="stackDetail"
     >
-      <img src="@/assets/img/stack/javascript.jpg" class="stackImg" alt="">
-      <h4>JavaScript</h4>
+      <img src="@/assets/img/stack/reactjs.jpg" class="stackImg" alt="">
+      <h4>React.js</h4>
       <v-rating
-        :value="3"
+        :value="2"
+        :readonly="true"
+        color="yellow darken-3"
+        background-color="white"
+        half-increments
+        small
+      ></v-rating>
+    </v-col>
+    <v-col
+      cols="6"
+      sm="4"
+      md="3"
+      lg="2"
+      class="stackDetail"
+    >
+      <img src="@/assets/img/stack/redux.jpg" class="stackImg" alt="">
+      <h4>Redux</h4>
+      <v-rating
+        :value="1.5"
+        :readonly="true"
+        color="yellow darken-3"
+        background-color="white"
+        half-increments
+        small
+      ></v-rating>
+    </v-col>
+    <v-col
+      cols="6"
+      sm="4"
+      md="3"
+      lg="2"
+      class="stackDetail"
+    >
+      <img src="@/assets/img/stack/reactnative.jpg" class="stackImg" alt="">
+      <h4>ReacNative</h4>
+      <v-rating
+        :value="2"
         :readonly="true"
         color="yellow darken-3"
         background-color="white"
