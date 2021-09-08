@@ -4,36 +4,27 @@
     <v-container>
       <v-row class="stackTitle">
         <h3>
-          <v-icon
-            color="#DF711B"
-            class="icon"
-          >
+          <v-icon color="#DF711B" class="icon">
             mdi-cog-sync
           </v-icon>
           DevOps
         </h3>
       </v-row>
       <DevOpsStack />
-      <br>
+      <br />
       <v-row class="stackTitle">
         <h3>
-          <v-icon
-            color="#DF711B"
-            class="icon"
-          >
+          <v-icon color="#DF711B" class="icon">
             mdi-dns
           </v-icon>
           BackEnd
         </h3>
       </v-row>
       <BackEndStack />
-      <br>
+      <br />
       <v-row class="stackTitle">
         <h3>
-          <v-icon
-            color="#DF711B"
-            class="icon"
-          >
+          <v-icon color="#DF711B" class="icon">
             mdi-monitor
           </v-icon>
           FrontEnd
@@ -50,13 +41,13 @@ import BackEndStack from "@/components/home/stack/BackEndStack.vue";
 import FrontEndStack from "@/components/home/stack/FrontEndStack.vue";
 
 export default {
-  name:"Stack",
+  name: "Stack",
   components: {
     DevOpsStack,
     BackEndStack,
     FrontEndStack,
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
