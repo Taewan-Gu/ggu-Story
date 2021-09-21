@@ -16,6 +16,26 @@ const routes = [
     component: () => import('../views/Projects.vue')
   },
   {
+    path: '/projects/coderun',
+    name: 'Coderun',
+    component: () => import('../views/projects/Coderun.vue')
+  },
+  {
+    path: '/projects/flanet',
+    name: 'Flanet',
+    component: () => import('../views/projects/Flanet.vue')
+  },
+  {
+    path: '/projects/nuvo',
+    name: 'Nuvo',
+    component: () => import('../views/projects/Nuvo.vue')
+  },
+  {
+    path: '/projects/kgbros',
+    name: 'Kgbros',
+    component: () => import('../views/projects/Kgbros.vue')
+  },
+  {
     path: '/words',
     name: 'Words',
     component: () => import('../views/Words.vue')
