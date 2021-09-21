@@ -1,5 +1,5 @@
 <template>
-  <v-app class="app">
+  <v-app class="app no-drag">
     <Nav />
     <div class="navPosition"></div>
     <v-main>
@@ -32,6 +32,14 @@ export default {
 
 .app * { 
  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.no-drag {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select:none;
 }
 
 .navPosition {
