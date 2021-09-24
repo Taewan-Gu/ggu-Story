@@ -62,12 +62,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.stackDetail {
-  text-align: center;
-}
-
-.stackImg {
-  height: 100px;
-}
-</style>
+<style scoped></style>
