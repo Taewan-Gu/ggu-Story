@@ -1,104 +1,47 @@
 <template>
   <v-row>
-    <v-col cols="6" sm="4" md="3" lg="2" class="stackDetail">
-      <img src="@/assets/img/stack/docker.jpg" class="stackImg" alt="" />
-      <h4>Docker</h4>
-      <v-rating
-        :value="3.5"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
-    <v-col cols="6" sm="4" md="3" lg="2" class="stackDetail">
-      <img src="@/assets/img/stack/kubernetes.svg" class="stackImg" alt="" />
-      <h4>Kubernetes</h4>
-      <v-rating
-        :value="1.5"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
-    <v-col cols="6" sm="4" md="3" lg="2" class="stackDetail">
-      <img src="@/assets/img/stack/jenkins.jpg" class="stackImg" alt="" />
-      <h4>Jenkins</h4>
-      <v-rating
-        :value="2.5"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
-    <v-col cols="6" sm="4" md="3" lg="2" class="stackDetail">
-      <img src="@/assets/img/stack/nginx.svg" class="stackImg" alt="" />
-      <h4>Nginx</h4>
-      <v-rating
-        :value="2"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
-    <v-col cols="6" sm="4" md="3" lg="2" class="stackDetail">
-      <img src="@/assets/img/stack/ec2.svg" class="stackImg" alt="" />
-      <h4>AWS EC2</h4>
-      <v-rating
-        :value="2.5"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
-    <v-col cols="6" sm="4" md="3" lg="2" class="stackDetail">
-      <img src="@/assets/img/stack/gke.jpg" class="stackImg" alt="" />
-      <h4>GCP GKE</h4>
-      <v-rating
-        :value="1.5"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
-    <v-col cols="6" sm="4" md="3" lg="2" class="stackDetail">
-      <img src="@/assets/img/stack/linux.svg" class="stackImg" alt="" />
-      <h4>Linux</h4>
-      <v-rating
-        :value="3"
-        :readonly="true"
-        color="yellow darken-3"
-        background-color="white"
-        half-increments
-        small
-      ></v-rating>
-    </v-col>
+    <StackDetail
+      v-for="(name, idx) in names"
+      :key="idx"
+      :img="imgs[idx]"
+      :name="name"
+      :rating="ratings[idx]"
+    />
   </v-row>
 </template>
 
 <script>
+import StackDetail from "@/components/home/stack/StackDetail.vue";
+
 export default {
   name: "DevOpsStack",
+  data() {
+    return {
+      names: [
+        "Docker",
+        "Kubernetes",
+        "Linux",
+        "Jenkins",
+        "Nginx",
+        "AWS EC2",
+        "GCP GKE",
+      ],
+      ratings: [3.5, 1.5, 3, 2.5, 2, 2, 1.5],
+      imgs: [
+        "docker.jpg",
+        "kubernetes.svg",
+        "linux.svg",
+        "jenkins.jpg",
+        "nginx.svg",
+        "ec2.svg",
+        "gke.jpg",
+      ],
+    };
+  },
+  components: {
+    StackDetail,
+  },
 };
 </script>
 
-<style scoped>
-.stackDetail {
-  text-align: center;
-}
-
-.stackImg {
-  height: 100px;
-}
-</style>
+<style scoped></style>
