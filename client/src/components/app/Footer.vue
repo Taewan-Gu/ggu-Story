@@ -9,7 +9,7 @@
       >
         <p>flynngu21@gmail.com</p>
         <p>
-          Github: 
+          GitHub: 
           <a href="https://github.com/fksk94"> github.com/fksk94 </a> 
           / Blog: 
           <a href="https://txegg.tistory.com"> txegg.tistory.com </a>

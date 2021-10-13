@@ -20,6 +20,7 @@ export default {
       names: [
         "Vue.js",
         "Vuex",
+        "Nuxt.js",
         "HTML5",
         "CSS3",
         "JavaScript",
@@ -29,10 +30,11 @@ export default {
         "Redux",
         "ReacNative",
       ],
-      ratings: [3.5, 3, 3, 3.5, 3, 1.5, 2, 2, 1.5, 1.5],
+      ratings: [3.5, 3, 1.5, 3, 3.5, 3, 1.5, 2, 2, 1.5, 1.5],
       imgs: [
         "vuejs.jpg",
         "vuex.jpg",
+        "nuxtjs.png",
         "html.jpg",
         "css.jpg",
         "javascript.jpg",
