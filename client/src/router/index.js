@@ -16,6 +16,16 @@ const routes = [
     component: () => import('../views/Projects.vue')
   },
   {
+    path: '/projects/agaein',
+    name: 'Coderun',
+    component: () => import('../views/projects/Agaein.vue')
+  },
+  {
+    path: '/projects/ggustory',
+    name: 'Coderun',
+    component: () => import('../views/projects/Ggustory.vue')
+  },
+  {
     path: '/projects/coderun',
     name: 'Coderun',
     component: () => import('../views/projects/Coderun.vue')

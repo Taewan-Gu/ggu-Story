@@ -71,6 +71,7 @@ export default {
 .stackImg {
   margin-left: 10%;
   width: 80%;
+  height: auto;
 }
 
 .projectVideo {

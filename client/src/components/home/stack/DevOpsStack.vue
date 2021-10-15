@@ -27,7 +27,7 @@ export default {
         "AWS EC2",
         "GCP GKE",
       ],
-      ratings: [3.5, 1.5, 3, 2.5, 2.5, 2, 2, 1.5],
+      ratings: [4, 1.5, 3, 2.5, 2.5, 2, 2, 1.5],
       imgs: [
         "docker.jpg",
         "kubernetes.svg",
