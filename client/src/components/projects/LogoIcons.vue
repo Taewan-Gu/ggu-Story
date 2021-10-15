@@ -1,5 +1,21 @@
 <template>
   <div class="logoIcons">
+    <div :class="{selectedLogoBox: selectedLogos.agaein}">
+      <img
+        :src="require(`@/assets/img/projects/agaeinthumbnail.png`)"
+        :class="{logo: true, selectedLogo: selectedLogos.agaein}"
+        @click="selectLogo('agaein')"
+        alt="coderunthumbnail"
+      >
+    </div>
+    <div :class="{selectedLogoBox: selectedLogos.ggustory}">
+      <img
+        :src="require(`@/assets/img/projects/ggustorythumbnail.png`)"
+        :class="{logo: true, selectedLogo: selectedLogos.ggustory}"
+        @click="selectLogo('ggustory')"
+        alt="coderunthumbnail"
+      >
+    </div>
     <div :class="{selectedLogoBox: selectedLogos.coderun}">
       <img
         :src="require(`@/assets/img/projects/coderunthumbnail.png`)"

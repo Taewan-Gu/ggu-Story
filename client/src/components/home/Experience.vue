@@ -16,7 +16,7 @@
           </div>
           <h3>2 학기</h3>
           <div class="contentDetail">
-            Docker 및 FastAPI, K8s, Jenkins 등 학습 <br />
+            Docker 및 FastAPI, k8s, Jenkins 등 학습 <br />
             삼성전자 네트워크사업부 연계 프로젝트 3등 <br />
             NUVO 프로젝트 지역 3등
           </div>
@@ -28,10 +28,11 @@
           <p class="period">2021.07 ~ 2021.09</p>
         </v-col>
         <v-col cols="6" md="8" lg="9">
-          <h3>인턴</h3>
+          <h3>인프라 시스템 개발</h3>
           <div class="contentDetail">
             JSP/Servlet부터 Spring MVC까지 자바 웹 기본기 학습 <br />
-            변수 작명부터 Exception 처리, 동시성 문제 등 코드리뷰 진행
+            변수 작명부터 Exception 처리, 동시성 문제 등 코드리뷰 진행 <br />
+            사내 DB 권한 시스템 유지보수
           </div>
         </v-col>
       </v-row>
