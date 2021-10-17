@@ -57,7 +57,6 @@
           >https://hjinn.notion.site/hjinn/PROJECT-WORKSPACE-b6cf4492c2b9443aba7a572999411097</a
         >
       </p>
-      <p>아직 제작 중이라 미흡합니다.</p>
       <p>OKKY에서 시작된 사이드 프로젝트</p>
       <p>
         총 5명 중 디자이너 1명, 프론트엔드 2명, 풀스택 1명, 백엔드 1명 (백엔드,
