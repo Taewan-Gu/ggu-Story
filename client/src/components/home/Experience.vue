@@ -35,6 +35,18 @@
           </div>
         </v-col>
       </v-row>
+      <v-row>
+        <v-col cols="6" md="4" lg="3" class="contentTitle">
+          <h2>현대카드</h2>
+          <p class="period">2021.12 ~ 재직 중</p>
+        </v-col>
+        <v-col cols="6" md="8" lg="9">
+          <h3>Associate</h3>
+          <div class="contentDetail">
+            데이터 플랫폼 엔지니어 <br />
+          </div>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
