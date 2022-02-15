@@ -6,7 +6,7 @@
       <v-row>
         <v-col cols="6" md="4" lg="3" class="contentTitle">
           <h2>삼성 청년 SW 아카데미</h2>
-          <p class="period">2020.07 ~ 2021.06</p>
+          <p class="period">2020.07 ~ 2021.05</p>
         </v-col>
         <v-col cols="6" md="8" lg="9">
           <div class="contentDetail">
