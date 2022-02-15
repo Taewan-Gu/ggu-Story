@@ -19,7 +19,7 @@
               <v-icon>
                 mdi-github
               </v-icon>
-              github.com/fksk94 <br>
+              <a href="https://github.com/Taewan-Gu"> github.com/Taewan-Gu </a> <br>
               <v-icon>
                 mdi-cellphone
               </v-icon>
@@ -41,7 +41,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .visualStatus {
   display: none;
 }
@@ -82,6 +82,12 @@ export default {
   margin-top: 8px;
   margin-bottom: 15px;
   line-height: 35px;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: #333333 !important;
 }
 
 </style>

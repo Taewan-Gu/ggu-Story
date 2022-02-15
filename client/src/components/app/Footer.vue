@@ -10,9 +10,7 @@
         <p>flynngu21@gmail.com</p>
         <p>
           GitHub: 
-          <a href="https://github.com/fksk94"> github.com/fksk94 </a> 
-          / Blog: 
-          <a href="https://txegg.tistory.com"> txegg.tistory.com </a>
+          <a href="https://github.com/Taewan-Gu"> github.com/Taewan-Gu </a> 
         </p>
         <p>
           BOJ: 

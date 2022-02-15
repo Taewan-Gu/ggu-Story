@@ -44,12 +44,12 @@
     <div class="projectContent">
       <p>
         자세한 프로젝트 설명 및 깃 주소:
-        <a href="https://github.com/fksk94/ggu-story"
-          >https://github.com/fksk94/ggu-story</a
+        <a href="https://github.com/Taewan-Gu/ggu-story"
+          >https://github.com/Taewan-Gu/ggu-story</a
         >
       </p>
       <p>개인 포트폴리오 프로젝트</p>
-      <p>2021.07 ~ 진행 중</p>
+      <p>2021.07 ~ 2021.08(운영 중)</p>
     </div>
   </div>
 </template>

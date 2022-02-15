@@ -28,7 +28,7 @@
     <br>
     <h1>프로젝트 정보</h1>
     <div class="projectContent">
-      <p>자세한 프로젝트 설명 및 깃 주소: <a href="https://github.com/fksk94/CODE-RUN">https://github.com/fksk94/CODE-RUN</a></p>
+      <p>자세한 프로젝트 설명 및 깃 주소: <a href="https://github.com/Taewan-Gu/CODE-RUN">https://github.com/Taewan-Gu/CODE-RUN</a></p>
       <p>삼성 청년 SW 아카데미 자율프로젝트</p>
       <p>총 5명 중 프론트엔드 3명, 백엔드 2명 (백엔드, 인프라 담당)</p>
       <p>2021.04 ~ 2021.05(6주)</p>

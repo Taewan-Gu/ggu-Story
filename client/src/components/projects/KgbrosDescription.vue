@@ -29,9 +29,9 @@
     <h1>프로젝트 정보</h1>
     <div class="projectContent">
       <p>자세한 프로젝트 설명 및 깃 주소</p>
-      <p><a href="https://github.com/fksk94/KGBros-vuejs-server">https://github.com/fksk94/KGBros-vuejs-server</a></p>
-      <p><a href="https://github.com/fksk94/KGBros-django-server">https://github.com/fksk94/KGBros-django-server</a></p>
-      <p><a href="https://github.com/fksk94/KGBros-ReactNative">https://github.com/fksk94/KGBros-ReactNative</a></p>
+      <p><a href="https://github.com/Taewan-Gu/KGBros-vuejs-server">https://github.com/Taewan-Gu/KGBros-vuejs-server</a></p>
+      <p><a href="https://github.com/Taewan-Gu/KGBros-django-server">https://github.com/Taewan-Gu/KGBros-django-server</a></p>
+      <p><a href="https://github.com/Taewan-Gu/KGBros-ReactNative">https://github.com/Taewan-Gu/KGBros-ReactNative</a></p>
       <p>삼성 청년 SW 아카데미 1학기 최종프로젝트</p>
       <p>총 2명 중 프론트엔드 1명, 풀스택 1명 (풀스택 담당)</p>
       <p>2020.12(2주)</p>

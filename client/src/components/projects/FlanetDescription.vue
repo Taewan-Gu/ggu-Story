@@ -28,7 +28,7 @@
     <br>
     <h1>프로젝트 정보</h1>
     <div class="projectContent">
-      <p>자세한 프로젝트 설명 및 깃 주소: <a href="https://github.com/fksk94/FLANET">https://github.com/fksk94/FLANET</a></p>
+      <p>자세한 프로젝트 설명 및 깃 주소: <a href="https://github.com/Taewan-Gu/FLANET">https://github.com/Taewan-Gu/FLANET</a></p>
       <p>삼성 청년 SW 아카데미 넷싸프로젝트: 아카데미 내 우수 20인 선정 및 3등 수상</p>
       <p>총 5명 중 프론트엔드 2명, 백엔드 3명 (백엔드, 인프라 담당)</p>
       <p>2021.02 ~ 2021.04(7주)</p>

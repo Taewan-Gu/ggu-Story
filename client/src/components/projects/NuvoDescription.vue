@@ -30,7 +30,7 @@
     <br>
     <h1>프로젝트 정보</h1>
     <div class="projectContent">
-      <p>자세한 프로젝트 설명 및 깃 주소: <a href="https://github.com/fksk94/NUVO">https://github.com/fksk94/NUVO</a></p>
+      <p>자세한 프로젝트 설명 및 깃 주소: <a href="https://github.com/Taewan-Gu/NUVO">https://github.com/Taewan-Gu/NUVO</a></p>
       <p>삼성 청년 SW 아카데미 공통프로젝트: 3등 수상</p>
       <p>총 4명 중 프론트엔드 1명, 풀스택 1명, 백엔드 1명, VR 렌더링 1명 (프론트엔드 담당)</p>
       <p>2021.01 ~ 2021.02(7주)</p>

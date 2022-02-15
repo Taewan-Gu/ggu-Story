@@ -22,7 +22,8 @@
         >
           <span class="menuItem" @click="gotoHome"> HOME </span>
           <span class="menuItem" @click="gotoProjects"> PROJECTS </span>
-          <span class="menuItem" @click="gotoBlog"> BLOG </span>
+          <span class="menuItem" @click="gotoBlog1"> BLOG1 </span>
+          <span class="menuItem" @click="gotoBlog2"> BLOG2 </span>
           <!-- <span class="menuItem" @click="gotoWords"> WORDS </span> -->
           <span :class="{menuItem: true, visualStatus: !visualStatus}" @click="clickContact"> CONTACT </span>
           <span :class="{menuItem: true, visualStatus: visualStatus}" @click="clickContact"> CLOSEUP </span>
@@ -94,8 +95,11 @@ export default {
     gotoProjects () {
       this.$router.history.push({name: "Projects"});
     },
-    gotoBlog () {
+    gotoBlog1 () {
       open("https://txegg.tistory.com");
+    },
+    gotoBlog2 () {
+      open("https://velog.io/@fksk94");
     },
     gotoWords () {
       this.$router.history.push({name: "Words"});
